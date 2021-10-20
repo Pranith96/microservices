@@ -85,7 +85,7 @@ public class AddCartController {
 	public ResponseEntity<String> deleteProduct() {
 
 		String url = "http://localhost:9999/product/delete/{productId}";
-		Integer productId = 7;
+		Integer productId = 5;
 		restTemplate.delete(url, productId);
 		return ResponseEntity.status(HttpStatus.OK).body("Deleted successfully");
 	}
