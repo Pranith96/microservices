@@ -18,7 +18,7 @@ import com.online.ecommerce.application.entity.Product;
 import com.online.ecommerce.application.service.ProductService;
 
 @RestController
-@RequestMapping(value = "/product")
+@RequestMapping("/product")
 public class ProductController {
 
 	@Autowired

@@ -1,17 +1,17 @@
-package com.online.ecommerce.application;
+package com.zuul.apigateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
-@EntityScan("com.online.ecommerce.application.entity")
 @SpringBootApplication
+@EnableZuulProxy
 @EnableEurekaClient
-public class EcommerceCartServiceApplication {
+public class EcommerceZuulApigatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EcommerceCartServiceApplication.class, args);
+		SpringApplication.run(EcommerceZuulApigatewayApplication.class, args);
 	}
 
 }
